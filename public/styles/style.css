@@ -1,0 +1,181 @@
+:root {
+  --background-gray: #ede9e2;
+  --button-gray: #545454;
+  --main-titles-gray: #545454;
+  --main-titles-pale-gray: #d9d9d9;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  font-family: 'Sailors', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 30%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-titles-gray);
+  margin: 0.3rem 0;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--main-titles-gray);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.site_content {
+  background-image: url('../images/slash-hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero,
+.discography,
+.biography,
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  margin: 2rem;
+}
+
+.hero h1 {
+  font-size: 80px;
+  background-color: black;
+}
+
+.hero h2 {
+  background-color: black;
+}
+
+.hero button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.hero button:hover {
+  background-color: var(--button-gray);
+  color: white;
+}
+
+ul,
+li {
+  font-family: 'Verdana';
+}
+
+footer {
+  width: 100%;
+  font-family: 'Sailors', sans-serif;
+  padding: 2rem 0;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  margin-left: 2rem;
+}
+
+.discography h2 {
+  background-image: url('../images/slash-myles.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.discography-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.biography h2 {
+  background-image: url('../images/slash-concert.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.biography article {
+  margin: 2rem;
+  text-align: justify;
+}
+
+.biography p {
+  font-family: 'Verdana';
+}
+
+.gallery-images {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.gallery h2 {
+  font-size: 70px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 480px;
+  height: 350px;
+  object-fit: cover;
+  margin: 2rem;
+}
